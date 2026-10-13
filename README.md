@@ -70,10 +70,12 @@ A shared household agent that lives in your group chat and helps everyone in the
 </details>
 
 <details>
-<summary><b>LLM fine-tuning & serving</b> · LoRA / QLoRA on Qwen, served with vLLM</summary>
+<summary><b>LLM fine-tuning & serving</b> · LoRA on Qwen2.5-3B, served with vLLM</summary>
 <br>
 
-Fine-tuned Qwen models with LoRA/QLoRA (Unsloth) and served them on vLLM, benchmarking speed and generation quality side by side.
+Fine-tuned Qwen2.5-3B-Instruct with LoRA on SciRIFF scientific summarization, compared base vs. LoRA on quality (ROUGE) and serving performance, then served the adapter end to end with vLLM — training notebook, eval scripts and server included.
+
+[`vllm-sft-pipeline`](https://github.com/sudhersankv/vllm-sft-pipeline)
 </details>
 
 <details>
@@ -88,6 +90,66 @@ Put an LLM in the loop of OpenROAD's flow to steer timing optimization during AS
 <br>
 
 Building legal-domain models through phrase mining, graph analysis and instruction tuning.
+
+[`casecade.ai`](https://github.com/sudhersankv/casecade.ai)
+</details>
+
+---
+
+### Recent builds & hackathons
+
+<details>
+<summary><b>doorman</b> · siteside harness for visiting AI agents · MongoDB Harness Engineering hackathon, SF Tech Week 2026</summary>
+<br>
+
+A script tag that maps any website into tools for visiting AI agents — WebMCP, a `/.well-known/doorman.json` manifest, or `window.doorman` — so an agent can either call a tool directly or hand off a goal in plain language. A small fast model ("Jev") makes each routing decision in a few hundred milliseconds, every visit is logged to MongoDB Atlas, and the harness **rewrites itself**: after a batch of visits it edits its own tools, context policy and guardrails, tests the new version on held-out goals, and keeps only the changes that measurably help. Built in one day.
+
+[`doorman`](https://github.com/sudhersankv/doorman)
+</details>
+
+<details>
+<summary><b>Rick-Approved</b> · AI-ranked shopping search</summary>
+<br>
+
+Shopping search that pulls listings across stores and scores each one with a typed evaluation model ("Jev"), then lets you re-rank results live with dials — Sensible↔Weird, Legit, Value, Quality, or one you write yourself. Ranking is a weighted average computed in the browser, so moving a dial never calls the backend.
+
+[`jevshop`](https://github.com/sudhersankv/jevshop) · [live demo](https://rickapproved.netlify.app/)
+</details>
+
+<details>
+<summary><b>Data Plumber</b> · pay-per-call schema adapter for agents</summary>
+<br>
+
+An agent-facing API that reshapes any upstream JSON payload into the exact schema the next step needs, and reports honestly what it couldn't find. Agents pay through [Pay.sh](https://pay.sh) — $0.02 in stablecoin settles per request, no accounts or API keys needed.
+
+[`data-plumber`](https://github.com/sudhersankv/data-plumber)
+</details>
+
+<details>
+<summary><b>Fyfteen Labs</b> · paper-trading sandbox for Kalshi's 15-min BTC markets</summary>
+<br>
+
+A systems-engineering project, not a trading product: keeps a real-time order book, a 15-minute contract clock and a settlement definition in sync against real Kalshi market data, with simulated funds only.
+
+[`fyfteen-labs`](https://github.com/sudhersankv/fyfteen-labs)
+</details>
+
+<details>
+<summary><b>Noteslash</b> · turn audio/text into a searchable, cited library</summary>
+<br>
+
+Upload podcasts, interviews or transcripts; Noteslash transcribes (Whisper), auto-categorizes and indexes everything with pgvector, then lets you explore it via chat, voice (OpenAI Realtime), or exported reports — every answer cited back to its source.
+
+[`noteslashv2`](https://github.com/sudhersankv/noteslashv2)
+</details>
+
+<details>
+<summary><b>That Guy</b> · the trusted local referral your neighbor would give you</summary>
+<br>
+
+For the rare, stressful home emergencies — burst pipe, leaky roof, locked out — That Guy gives you the equivalent of a neighbor's "call these people, they came in an hour and charged $240," instead of a wall of look-alike 5-star listings.
+
+[`that-guy`](https://github.com/sudhersankv/that-guy) · [live demo](https://prod-main-app-dd7986-009wjm7pka9.compute.instacloud-edge.com)
 </details>
 
 ---
@@ -95,9 +157,11 @@ Building legal-domain models through phrase mining, graph analysis and instructi
 ### Toolbox
 
 <p>
-  <img src="https://skillicons.dev/icons?i=python,cpp,pytorch,docker,aws,postgres,redis,linux,bash,git&perline=10" alt="Python, C++, PyTorch, Docker, AWS, PostgreSQL, Redis, Linux, Bash, Git">
+  <img src="https://skillicons.dev/icons?i=python,cpp,typescript,nextjs,pytorch,docker,aws,postgres,supabase,mongodb,redis,linux,bash,git&perline=10" alt="Python, C++, TypeScript, Next.js, PyTorch, Docker, AWS, PostgreSQL, Supabase, MongoDB, Redis, Linux, Bash, Git">
 </p>
 
 **Inference & GPU:** vLLM · CUDA · Triton · ROCm/HIP · Nsight Systems · ONNX Runtime · LMCache
 
 **ML:** PyTorch · Hugging Face Transformers · LoRA/QLoRA · Unsloth · OpenCV
+
+**Agents & product:** Next.js · Supabase · MongoDB Atlas · WebMCP · Pay.sh / x402 micropayments
