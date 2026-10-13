@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="282" viewBox="0 0 1000 282" role="img" aria-label="Benchmarks: vLLM 3.1x faster TTFT and 2.1x throughput vs Hugging Face; prefix caching 7x faster TTFT">
+<style>
+.h{font:600 15px -apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;fill:#1f2328}
+.lab{font:600 14px -apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;fill:#1f2328}
+.cap{font:400 12px ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;fill:#59636e}
+.val{font:500 12px ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;fill:#59636e}
+.strong{fill:#1f2328}
+.win{font:700 15px ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;fill:#1a7f37}
+.bar{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation:grow .8s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes grow{to{transform:scaleX(1)}}
+@media (prefers-reduced-motion:reduce){.bar{animation:none;transform:none}}
+</style>
+<rect x="0.5" y="0.5" width="999" height="281" rx="12" fill="#ffffff" stroke="#d0d7de"/>
+<text x="40" y="40" class="h">Measured, not claimed</text>
+<text x="960" y="40" text-anchor="end" class="cap">Qwen2.5-1.5B-Instruct · RTX 4060 Laptop (8 GB) · warm runs</text>
+<text x="40" y="82" class="lab">Time to first token</text><text x="40" y="102" class="cap">HF Transformers → vLLM</text><rect x="330" y="70" width="420.0" height="16" rx="3" fill="#59636e" fill-opacity=".45" class="bar" style="animation-delay:0.20s"/><text x="758.0" y="83" class="val">116 ms</text><rect x="330" y="92" width="134.0" height="16" rx="3" fill="#1a7f37" class="bar" style="animation-delay:0.35s"/><text x="472.0" y="105" class="val strong">37 ms</text><text x="960" y="94" text-anchor="end" class="win">3.1× faster</text><text x="40" y="154" class="lab">Decode throughput</text><text x="40" y="174" class="cap">HF Transformers → vLLM</text><rect x="330" y="142" width="202.0" height="16" rx="3" fill="#59636e" fill-opacity=".45" class="bar" style="animation-delay:0.55s"/><text x="540.0" y="155" class="val">30.2 tok/s</text><rect x="330" y="164" width="420.0" height="16" rx="3" fill="#1a7f37" class="bar" style="animation-delay:0.70s"/><text x="758.0" y="177" class="val strong">62.8 tok/s</text><text x="960" y="166" text-anchor="end" class="win">2.1× more</text><text x="40" y="226" class="lab">TTFT, shared 1K-token prefix</text><text x="40" y="246" class="cap">vLLM prefix cache off → on</text><rect x="330" y="214" width="420.0" height="16" rx="3" fill="#59636e" fill-opacity=".45" class="bar" style="animation-delay:0.90s"/><text x="758.0" y="227" class="val">396 ms</text><rect x="330" y="236" width="60.5" height="16" rx="3" fill="#1a7f37" class="bar" style="animation-delay:1.05s"/><text x="398.5" y="249" class="val strong">57 ms</text><text x="960" y="238" text-anchor="end" class="win">7× faster</text>
+</svg>
