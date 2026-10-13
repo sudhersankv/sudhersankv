@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="https://linkedin.com/in/sudhersankv"><img src="https://img.shields.io/badge/LinkedIn-sudhersankv-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="mailto:kvsudhersan11@gmail.com"><img src="https://img.shields.io/badge/Email-kvsudhersan11-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="mailto:kvsudhersan86@gmail.com"><img src="https://img.shields.io/badge/Email-kvsudhersan86-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
   <img src="https://img.shields.io/badge/Open_to-full--time_SWE_·_AI_·_ML_roles-3fb950?style=flat-square" alt="Open to full-time roles">
 </p>
 
